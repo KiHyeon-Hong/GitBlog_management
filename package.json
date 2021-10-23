@@ -7,7 +7,8 @@
         "clean": "hexo clean",
         "deploy": "hexo deploy",
         "server": "hexo server",
-        "pull": "git pull && cd .deploy_git && git pull"
+        "pull": "git pull && cd .deploy_git && git pull",
+        "asdf": "yarn build && yarn deploy && git add . && git commit -m \"update blog\""
     },
     "hexo": {
         "version": "5.2.0"
