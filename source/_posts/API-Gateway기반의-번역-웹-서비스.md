@@ -35,7 +35,7 @@ thumbnail: /images/AWS/AWSGuide/API게이트웨이_응용하기/index.svg
 -   role_for_translate_Service 입력
 -   정책 템플릿은 '기본 Lambda@Edge' 입력
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail1"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail1.jpg"></p>
 
 -   람다 함수 코드는 다음과 같이 작성
 
@@ -80,32 +80,32 @@ exports.handler = function (event, context, callback) {
 };
 ```
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail2"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail2.jpg"></p>
 
 -   람다 함수 역할을 수정
 -   권한의 실행 역할에서 role_for_translate_Service 선택
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail3"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail3.jpg"></p>
 
 -   기존에 있는 권한인 TranslateFullAccess를 선택
 -   새롭게 translate로의 접근 권한이 생김
 
 ---
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail4"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail4.jpg"></p>
 
 -   추가 트리거를 통하여 API 게이트웨이를 연간함
 -   API 생성을 선택
 -   보안은 열기로 설정
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail5"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail5.jpg"></p>
 
 -   API 엔드포인트를 보면 주소가 생김
 -   해당 주소가 홈페이지를 통해 서비스르 만들어 요청할 주소
 
 ---
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail6"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail6.jpg"></p>
 
 -   웹 페이지를 다음과 같이 생성
 
@@ -156,39 +156,39 @@ exports.handler = function (event, context, callback) {
 
 -   이때, fetch 안에 아까 람다 함수의 API 게이트웨이 엔드포인트를 복사한다.
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail7"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail7.jpg"></p>
 
 -   S3 버킷을 생성
 -   버킷 이름은 전세계에서 유일한 이름으로 설정해야 함
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail8"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail8.jpg"></p>
 
 -   이때, 퍼블릭 액세스 차단을 위한 버킷 설정에서 모든 퍼블릭 액세스 차단을 해제하고, 경고문을 체크
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail9"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail9.jpg"></p>
 
 -   해당 버킷에 방금 생성한 index.html 파일을 업로드 한다.
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail10"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail10.jpg"></p>
 
 -   이때 중요한점은 해당 index.html 파일을 퍼블릭으로 설정해야 함
 
 ---
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail11"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail11.jpg"></p>
 
 -   정적 웹 사이트 호스팅 편집에서 활성화를 선택
 -   인덱스 문서로 index.html, 파일은 없지만 오류 문서로 error.html을 입력
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail12"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail12.jpg"></p>
 
 -   버킷 웹 사이트 엔드포인트가 뜨는데, 이것이 바로 번역 사이트의 엔드 포인트
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail13"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail13.jpg"></p>
 
 -   사이트 접속 시 해당 화면이 나오는 것을 볼 수 있음
 
-<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail14"></p>
+<p align="center"><img src="/images/AWS/AWSGuide/API게이트웨이_응용하기/APIGatewayDetail14.jpg"></p>
 
 -   텍스트 입력 후 submit 선택 시 번역이 작동되는 것을 확인
 
