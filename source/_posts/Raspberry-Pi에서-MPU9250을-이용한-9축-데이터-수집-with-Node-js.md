@@ -19,11 +19,11 @@ categories:
 
 -   MPU9250은 3축 가속도 센서, 3축 자이로 센서, 그리고 3축 지자기 센서를 통합한 센서이다.
 
-<p align="center"><img src="/images/RaspberryPi/MPU9250/MPU9250.jpg"></p>
+<p align="center"><img src="/images/RaspberryPi/MPU9250/MPU9250.jpeg"></p>
 
 -   사용하는 핀은 3.3v, GND, SDA, 그리고 SCL이며, 다음과 같이 연결한다.
 
-<p align="center"><img src="/images/RaspberryPi/MPU9250/MPU9250_detail.jpg"></p>
+<p align="center"><img src="/images/RaspberryPi/MPU9250/MPU9250_detail.png"></p>
 
 -   연결 후 테스트
 
