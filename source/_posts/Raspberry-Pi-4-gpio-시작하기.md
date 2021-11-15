@@ -3,6 +3,7 @@ title: Raspberry Pi 4 gpio 시작하기
 date: 2021-11-15 21:23:47
 tags:
     - Raspberry Pi
+    - gpio
 categories:
     - Raspberry Pi
 ---
