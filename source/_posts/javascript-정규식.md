@@ -1,118 +1,84 @@
 ---
-title: javascript 정규식
-date: 2021-02-11 18:14:59
+title: Javascript 정규식
+date: 2021-11-17 20:42:27
 tags:
-    - Javascript
+  - Javascript
 categories:
-    - Javascript
+  - Javascript
 ---
 
--   정규 표현식은 대 소문자를 구분함
--   정규 표현식은 띄어쓰기 개수를 구분함
+## Javascript 정규표현식
 
--   ^who -> who가 시작 위치에 있을 때 ^를 사용
--   who$ -> who가 끝에 위치할 때 $를 사용
+### 패턴 생성
 
----
+```javascript
+let pattern = /a/;
+let pattern - new RegExp('a');
+```
 
--   $12$ \-\ $25$
--   ^$ -> $로 시작하는 것을 의미했더라도 $가 문자 끝을 의미해서 안됨
--   \$ -> \는 그 기호 뒤에 따라오는 문자를 정규 표현식의 의미가 있는 문자가 아니라 단순한 문자로 바꿔줌
--   \^ -> 단순한 문자열
--   ^\$ -> $가 처음 들어가는 문장을 의미함
--   \$$ -> $가 뒤에 들어가는 문장을 의미함
--   \\ -> \ 문자를 의미함
+### RegExp 객체의 정규 표현식
 
--   \는 escape 문자라고 함
+#### RegExp.exec()
 
----
+- 실행 결과는 문자열 a를 값으로 하는 배열을 리턴한다.
+- a가 없다면 null을 리턴한다.
+- 필요 정보 추출
 
--   . -> 모든 캐릭터를 매칭, 어떠한 문자 모든 것을 뜻함
--   ...... -> 어떠한 문자건 상관없이 6개의 문자를 의미 (6 덩어리씩 쪼개고 뒤에 남은 문자는 포함 안됨)
--   \. -> . any character를 의미하는 의미가 아니라 .을 의미
--   \..\. -> 문자. any character 문자.을 의미 (.K.)
+```javascript
+console.log(pattern.exec('abcdef')); // ['a']
+console.log(pattern.exec('bcdef')); // null
+```
 
----
+#### RegExp.test()
 
--   []
+- 정보가 존재하는지 확인
 
--   [oyu] -> o나 y나 u를 찾는다 (first, all matches)에 따라 몇개인지 달라짐
--   [] 안에는 문자 하나하를 의미함
--   [dH]. -> Ho 와 같이 d나 H 후 아무 문자 선택됨
--   [oyu][yow] -> ow, yo 등이 추출됨
+```javascript
+console.log(pattern.test('abcdef')); // true
+console.log(pattern.test('bcdef')); // false
+```
 
--   [-] -> range
+### String 객체의 정규 표현식
 
--   [c-k] -> c부터 k까지 범위의 문자 ([cdefghijk]와 같음)
--   [2-6] -> [23456]
--   [c-k1-8]
+#### String.match()
 
--   [^cdgh45] -> [] 안의 ^는 not을 의미함, ABEF 등등이 추출됨
--   [^w-z]
+```javascript
+let str = 'abcdef';
+str.match(pattern); // ['a']
 
----
+let str = 'bcdef';
+str.match(pattern); // null
+```
 
--   (on|ues|rida) -> on, ues, rida 각각 1덩어리, 문자를 선택함
--   (Mon|Tues|Fri)day -> (Monday|Tuesday|Friday)
--   ..(id|esd|nd)ay -> 앞의 아무 문자 2개까지 포함
+#### String.replace()
 
----
+```javascript
+let str = 'abcdef';
+str.match(pattern, 'A'); // 'Abcdef'
+```
 
--   Quantifiers -> 수량자 \*, +, ?
+### 옵션
 
--   a\*b -> a가 0 ~ 여러개, (ab, aab, b)
--   a+b -> a가 1 ~ 여러개, (aab, ab)
--   a?b -> a가 0 ~ 1개, (ab, b)
+#### i
 
--   .\* -> !@#$%^^&&등등 모든 텍스트 등등이 전부 선택
--   -A\*- -> - 앞에 A가 0 ~ 여러개, (--, -A-)
--   [-@]\* -> (-@-, -- 등등)
+- 대소문자를 구분하지 않는다.
 
--   \*+ => (*, \*\*), *가 1개 이상이여야 함
--   -@+- -> (-@@@-) @가 1개 이상있어야 함
--   [^ ]+ -> 공백에 대한 부분이 아닌것이 전부 선택됨
+```javascript
+let pattern = /a/;
+console.log('Abcdef'.match(pattern)); // null
 
--   -X?XX?X -> (-XX) 등
--   -@?@?@?- -> (--, -@-, -@@-, -@@@-)
+let pattern = /a/i;
+console.log('Abcdef'.match(pattern)); // ['A']
+```
 
----
+#### g
 
--   원하는 수량 정하기 -> {}
+- 모든 결과를 반환한다.
 
--   .{5} -> 모든 문자건 5글자여야 함, 만약에 12글자라면 5글자씩 2번 묶이고 2글자가 선택되지 않음
--   [els]{1,3} -> 3개 이하
--   [a-z]{3,} -> 3이상이란 의미
--   AB\*A -> AB{0,}A
--   AB+A -> AB{1,}A
--   AB?A -> AB{0,1}A
+```javascript
+let pattern = /a/;
+console.log('abcdefa'.match(pattern)); // ['a']
 
--   r.* -> *은 any character, r부터 모든 문자가 선택이 되어버림
--   r._? -> 수량자 뒤에 ? 오면은 _?는 \*는 최소인 0의 의미 (r)
--   r.+? -> +는 최소인 1의 의미가 됨, (ri, rk)
--   r.?? -> ?는 최소인 0을 의미 (r)
-
----
-
--   <div>.+</div> -> 비어있지 않은 div 태그 선택, 탐욕적인 수량자(Greedy)
--   <div>.+?</div> -> lazy 선택자, 게으른 선택자
-
----
-
--   \w -> word = [A-z0-9_]
--   \w\*
--   [a-z]\w\* -> (c3, d_4 등등)
--   \w{5} -> 문자 5개 충족하면 추출
-
--   \W -> word가 아니다, 공백이랑 :, . @#$% 등이 선택됨
--   \d -> digit, (1, 123 등)
--   \D -> 숫자가 아닌 것들
--   \b. -> 바운더리
--   \B.
-
--   \A... -> A는 시작점을 의미 시작에서 3문자
--   ...\Z -> 맨끝에서 3문자 선택됨
-
--   ^과 \A의 차이점 -> multi line 시 \A 하면 멅타라인이 있더라도 맨 앞 1개만 선택됨
-
--   \w+(?=X) -> ?=는 X를 문자를 검색하는 데에는 X를 쓰지만 선택은 하지 않음, (AAAX에서 AAA만 선택됨)
--   \w+(?=\w) ->
+let pattern = /a/g;
+console.log('abcdefa'.match(pattern)); // ['a', 'a']
+```
