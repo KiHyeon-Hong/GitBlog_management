@@ -9,7 +9,7 @@ categories:
 
 - https://www.youtube.com/watch?v=KfuyXQLFNW4&list=PLZKTXPmaJk8JZ2NAC538UzhY_UNqMdZB4&index=13
 
-## call
+## Call
 
 - 모든 함수에서 사용할 수 있으며, this를 특정한 값으로 지정한다.
 
@@ -40,7 +40,7 @@ function update(birthYear, occupation) {
 update.call(mike, 1999, 'singer');
 ```
 
-## apply
+## Apply
 
 - 함수의 매개변수를 처리하는 방법을 제외하면 call과 완전히 동일하다.
 - call은 일반적인 함수와 마찬가지로 매개 변수를 직접 받지만, apply는 매개변수를 배열로 받는다.
@@ -56,7 +56,7 @@ const min = Math.min.apply(null, num);
 const min = Math.min.call(null, ...num);
 ```
 
-## bind
+## Bind
 
 - 함수의 this 값을 영구히 바꾼다.
 
