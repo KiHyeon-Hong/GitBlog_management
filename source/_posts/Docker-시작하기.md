@@ -11,7 +11,7 @@ categories:
 
 - 도커 설치 : https://www.docker.com/get-started
 - docker desktop을 설치
-- powershell에서 도커 버전 확인 : docker --version
+- powershell에서 도커 버전 확인 명령어 : docker --version
 
 ---
 
