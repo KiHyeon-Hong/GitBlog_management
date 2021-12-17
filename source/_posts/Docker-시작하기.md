@@ -2,9 +2,9 @@
 title: Docker 시작하기
 date: 2021-12-07 17:21:04
 tags:
-  - Docker
+  - docker
 categories:
-  - Docker
+  - docker
 ---
 
 ### docker 설치
