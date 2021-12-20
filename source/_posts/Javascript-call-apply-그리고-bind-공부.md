@@ -2,7 +2,7 @@
 title: 'Javascript call, apply, 그리고 bind 공부'
 date: 2021-11-26 15:06:21
 tags:
-  - Javascript
+  - javascript
 categories:
   - Javascript
 ---

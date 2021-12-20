@@ -2,7 +2,7 @@
 title: Javascript 정규식 문법
 date: 2021-02-11 18:14:59
 tags:
-  - Javascript
+  - javascript
 categories:
   - Javascript
 ---

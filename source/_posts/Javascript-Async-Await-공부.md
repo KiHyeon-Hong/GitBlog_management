@@ -2,7 +2,7 @@
 title: 'Javascript Async, Await 공부'
 date: 2021-11-26 14:23:46
 tags:
-  - Javascript
+  - javascript
   - Promise
   - Asynchronous
 categories:

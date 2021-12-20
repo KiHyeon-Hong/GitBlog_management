@@ -2,7 +2,7 @@
 title: Javascript Promise 공부
 date: 2021-11-26 14:12:54
 tags:
-  - Javascript
+  - javascript
   - Promise
   - Asynchronous
 categories:
