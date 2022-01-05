@@ -12,7 +12,7 @@ categories:
 
 ## Rempte-SSH
 
-- Remote-SSh는 VSCode의 확장 기능 중 하나로 SSH 접속을 위한 도구 중 하나
+- Remote-SSh는 VSCode의 확장 기능 중 하나로 SSH 접속을 위한 도구
 
 <p align="center"><img src="/images/VSCode/Remote-SSH/ProcessError/Remote-SSH.png"></p>
 
