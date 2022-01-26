@@ -1,5 +1,5 @@
 ---
-title: Javascript 정규식
+title: javascript 정규식
 date: 2021-11-17 20:42:27
 tags:
   - javascript
