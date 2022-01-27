@@ -187,3 +187,11 @@ p10k configure
 ```
 
 ## Windows에서 설치한 Ubuntu 상세 구조 분석
+
+<p align="center"><img src="/images/Windows/Ubuntu/Install/wsl15.jpg"></p>
+<p align="center"><img src="/images/Windows/Ubuntu/Install/wsl16.jpg"></p>
+
+- 실제로 구현되는 구조는 아니라 가상화로 구현되는 구조이다.
+- cmd, powershell, 그리고 Windows Terminal과 같은 window 환경에서 동작하는 터미널의 경우 C 드라이브가 루트이며, 이 이상으로 올라갈 수 없다.
+- 그러나 가상화로 구현된 Ubuntu, 그리고 Ubuntu 위에서 동작하는 zsh 터미널은 루트 디렉터리까지 올라갈 수 있으며, Windows 환경은 mnt 디렉터리를 통해 들어간다.
+- home 디렉터리의 user는 Ubuntu에서 생성한 사용자이며, 이는 user 사용자의 환경이다.
