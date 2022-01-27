@@ -22,7 +22,7 @@ sudo apt-get install -y nodejs
 ### Node.js 버전 관리
 
 - https://github.com/nvm-sh/nvm
-- nvm은 노드 버전을 수비게 관리할 수 있게 해준다.
+- nvm은 노드 버전을 쉽게 관리할 수 있게 해준다.
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
