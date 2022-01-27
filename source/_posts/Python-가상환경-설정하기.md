@@ -16,7 +16,7 @@ categories:
 # 기본 명령어
 python -m venv venv
 
-# 현재의 파이썬 전역 패키지들을 깐다
+# 현재의 파이썬 전역 패키지들을 설치
 python -m venv 가상환경이름 --system-site-packages
 ```
 
