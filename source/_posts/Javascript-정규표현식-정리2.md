@@ -24,7 +24,6 @@ console.log(/d(b+)d/g.exec('cdbbdbsbz'));
 // 문자열로 표현한 형식
 myRe = new RegExp('d(b+)d', 'g');
 console.log(myRe.exec('cdbbdbsbz'));
-``;
 ```
 
 - index: 입력된 문자열에서 대응된 부분에 해당하는 인덱스
