@@ -21,7 +21,7 @@ var myRe = /d(b+)d/g;
 console.log(myRe.exec('cdbbdbsbz'));
 console.log(/d(b+)d/g.exec('cdbbdbsbz'));
 
-// 문자열 형식
+// 문자열로 표현한 형식
 myRe = new RegExp('d(b+)d', 'g');
 console.log(myRe.exec('cdbbdbsbz'));
 ``;
