@@ -1,5 +1,5 @@
 ---
-title: DynamoDB 시작하기
+title: AWS DynamoDB 시작하기
 date: 2020-10-13 14:28:38
 tags:
   - DynamoDB
