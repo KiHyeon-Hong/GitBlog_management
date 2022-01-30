@@ -1,5 +1,5 @@
 ---
-title: '공인 아이피, 사설 아이피 NodeJS'
+title: 'NodeJS 기반의 공인 아이피, 사설 아이피 사용하기'
 date: 2021-11-14 17:48:48
 tags:
   - javascript

@@ -2,17 +2,17 @@
 title: Git merge
 date: 2021-02-21 20:22:41
 tags:
-    - Git
+  - Git
 categories:
-    - Git
+  - Git
 thumbnail: /images/Git/GitStudy/gitLogo.png
 ---
 
+## merge & conflict
 
-### merge &  conflict
 - 충돌이 발생했을 때의 처리 방법
 
-``` cmd
+```cmd
 CONFLICT (add/add): Merge conflict in common.txt
 Auto-merging common.txt
 Automatic merge failed; fix conflicts and then commit the result.
@@ -25,14 +25,13 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 - 자동으로 깃은 병합작업을 실시
 
-#### MERGE_HEAD
-_ MERGE_MSG : 충돌 해결 했을 때 커밋시 메시지
+### MERGE_HEAD
 
+\_ MERGE_MSG : 충돌 해결 했을 때 커밋시 메시지
 
----------------------------------------
+---
 
-### 3way merge vs 2 way merge
-
+## 3way merge vs 2 way merge
 
 ```
 ME    Base    Other    2way    3way
@@ -41,5 +40,6 @@ ME    Base    Other    2way    3way
  1       C         2          ?         ?
  x        D        D          ?        x
 ```
+
 - 2way는 base를 보지 않고 2개의 차이점만을 본다
 - 3way는 base를 참조해서 2개의 대상을 병합한다(훨씬 good)
