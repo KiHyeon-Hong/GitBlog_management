@@ -1,5 +1,5 @@
 ---
-title: EC2를 활용한 Node.js 서버 구축
+title: AWS EC2를 활용한 Node.js 서버 구축
 date: 2020-11-30 23:20:24
 tags:
   - EC2
