@@ -39,4 +39,4 @@ exit
 <p align="center"><img src="/images/RaspberryPi/mysql/mysqlError/mysqlError3.jpg"></p>
 
 - 잘못된 비밀번호를 입력하면, 접속이 거부되며, 올바른 비밀번호로 접속이되는 것을 확인할 수 있다.
-- 이때, 주의할 점음 sudo 명령어로 mysql 접속을 시도할 경우 잘못된 비밀번호를 입력하더라도 접속이 허용될 수 있다.
+- 이때, 주의할 점은 sudo 명령어로 mysql 접속을 시도할 경우 잘못된 비밀번호를 입력하더라도 접속이 허용될 수 있다.

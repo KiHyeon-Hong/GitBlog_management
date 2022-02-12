@@ -58,7 +58,7 @@ ERROR 1356 (HY000): View 'mysql.user' references invalid table(s) or column(s) o
 ```
 
 - 이는 다음과 같이 수정한다.
--
+- https://kihyeon-hong.github.io/2022/02/12/Raspberry-Pi-mysql-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%84%A4%EC%A0%95-%EC%98%A4%EB%A5%98/
 
 ## mysql 테스트
 
