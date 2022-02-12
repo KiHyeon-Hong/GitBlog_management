@@ -49,6 +49,17 @@ Enter password: *
 MariaDB >
 ```
 
+#### 비밀번호 설정 오류
+
+- MariaDB-10.4+에서는 user가 table이 아니라 view가 되어 에러가 발생한다.
+
+```bash
+ERROR 1356 (HY000): View 'mysql.user' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+```
+
+- 이는 다음과 같이 수정한다.
+-
+
 ## mysql 테스트
 
 - 추후 진행할 9축센서 데이터를 이용한 충격감지 알고리즘 개발을 위한 데이터베이스 생성
