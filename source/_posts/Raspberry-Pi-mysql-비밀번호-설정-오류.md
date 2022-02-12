@@ -36,6 +36,11 @@ exit
 
 ### 변경 확인
 
+```bash
+sudo systemctl restart mariadb.service
+mysql -u root -p
+```
+
 <p align="center"><img src="/images/RaspberryPi/mysql/mysqlError/mysqlError3.jpg"></p>
 
 - 잘못된 비밀번호를 입력하면, 접속이 거부되며, 올바른 비밀번호로 접속이되는 것을 확인할 수 있다.
