@@ -22,7 +22,7 @@ categories:
 
 - 디렉터리 구조는 다음과 같다.
 
-![Figure1](https://kihyeon-hong.github.io/Collection_of_repository_images/CommonJS_and_ESModules_study/figure1.jpg)
+<p align="center"><img src="/images/Node_js/CJSESM/cjsesm1.jpg"></p>
 
 - ESModules wrapper를 esm의 하위 디렉터리에 넣고, package.json에 "type"을 추가한다.
 
