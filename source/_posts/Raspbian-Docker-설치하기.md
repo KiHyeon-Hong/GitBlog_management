@@ -60,3 +60,11 @@ http://localhost:65001/passwordModelTrain?versionData=0.2&comment=TestComment
   "comment": "0.2 model 학습 시작"
 }
 ```
+
+## Docker-compose 설치
+
+- docker-compose는 pip3을 이용하여 설치한다.
+
+```bash
+sudo pip3 install docker-compose
+```
