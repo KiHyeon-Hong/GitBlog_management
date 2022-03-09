@@ -20,7 +20,7 @@ categories:
 
 ### CommonJS의 named export를 ESModules로 감싸기
 
-- 디렉터리 구조는 다음과 같다.
+- CommonJS를 ESModules로 감싸기 위한 디렉터리 구조는 다음과 같다.
 
 <p align="center"><img src="/images/Node_js/CJSESM/cjsesm1.jpg"></p>
 
