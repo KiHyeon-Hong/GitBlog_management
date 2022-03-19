@@ -13,7 +13,7 @@ categories:
 - 전송할 데이터를 공개키로 암호화하며, /useKey에 전송한다.
 - 서버에서는 요청된 데이터를 개인키로 복호화한다.
 
-## 서버 코드
+## Server code
 
 ```javascript
 const express = require('express');
@@ -63,7 +63,7 @@ app.listen(65001, () => {
 });
 ```
 
-## 클라이언트 코드
+## Client code
 
 ```javascript
 const request = require('request');
