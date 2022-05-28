@@ -61,6 +61,20 @@ def play_game(*args):
   number_input.clear()
 ```
 
+### 실행 결과
+
+- 처음 실행 화면은 다음과 같다.
+
+<p align="center"><img src="/images/Python/PyScript/PyScript_start/PyScript_test_code1.jpeg"></p>
+
+- 1 ~ 50까지 선택한 숫자와 컴퓨터가 선택한 숫자가 일치하지 않는 경우 다음과 같은 메시지가 출력된다.
+
+<p align="center"><img src="/images/Python/PyScript/PyScript_start/PyScript_test_code2.jpeg"></p>
+
+- 1 ~ 50까지 선택한 숫자와 컴퓨터가 선택한 숫자가 일치할 경우 다음과 같은 메시지가 출력된다.
+
+<p align="center"><img src="/images/Python/PyScript/PyScript_start/PyScript_test_code3.jpeg"></p>
+
 ## Python의 외부 모듈 이용하기
 
 - numpy와 같은 외부 모듈을 import하여 사용할 수 있다.
@@ -81,3 +95,9 @@ def play_game(*args):
   </body>
 </html>
 ```
+
+### 실행 결과
+
+- 실행 결과는 다음과 같다.
+
+<p align="center"><img src="/images/Python/PyScript/PyScript_start/PyScript_test_code4.jpeg"></p>
