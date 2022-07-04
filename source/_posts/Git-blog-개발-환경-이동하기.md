@@ -10,7 +10,3 @@ categories:
 ## Git blog 개발 환경 이동하기
 
 ### npm install
-
-### Test
-
-- 이건 테스트 코드입니다.
