@@ -22,12 +22,24 @@ python -m venv 가상환경이름 --system-site-packages
 
 ## 가상환경 접속
 
+### Windows
+
 ```bash
 venv\Scripts\activate.bat
 ```
 
 ```bash
 (venv) C:\Users\user>
+```
+
+### MacOS
+
+```bash
+source venv/bin/activate
+```
+
+```bash
+(venv) kihyeon-hong@KiHyeon-Hong-MacBookPro Python_virtual %
 ```
 
 - 가상환경이 활성화되었다.
@@ -56,6 +68,11 @@ python -m notebook
 
 ```bash
 venv\Scripts\activate.bat
+python -m notebook
+```
+
+```bash
+source venv/bin/activate
 python -m notebook
 ```
 
