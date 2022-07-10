@@ -8,5 +8,3 @@ categories:
 ---
 
 ## Git blog 개발 환경 이동하기
-
-### npm install
