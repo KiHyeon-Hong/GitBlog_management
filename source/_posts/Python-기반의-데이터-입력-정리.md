@@ -287,3 +287,14 @@ abcdefg
 ```bash
 abcdefg
 ```
+
+### rstrip()
+
+- 소스코드에 readline을 입력하면 입력 후 엔터가 줄바꿈 기호로 입력이 되는데, 이 공백 문자를 제거하는 용도로 사용한다.
+
+```python
+import sys
+input = sys.stdin.readline().rstrip()
+
+print(input)
+```
