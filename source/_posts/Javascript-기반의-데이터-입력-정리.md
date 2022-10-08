@@ -2,9 +2,9 @@
 title: Javascript 기반의 데이터 입력 정리
 date: 2022-10-08 16:58:29
 tags:
-  - Python
+  - javascript
 categories:
-  - Python
+  - javascript
 ---
 
 - Javascript 기반 코딩테스트에서 입력을 위한 readline 사용법을 정리한다.
