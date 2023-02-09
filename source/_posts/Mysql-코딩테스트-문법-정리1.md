@@ -103,6 +103,23 @@ SELECT DATE_ADD(NOW(), INTERVAL -1 YEAR);
 SELECT DATE_SUB(NOW(), INTERVAL 1 SECOND);
 ```
 
+### DATEDIFF, TIMESTAMPDIFF
+
+- 날짜 차이 계산
+
+```sql
+SELECT DATEDIFF('2020-05-27 15:00:00','2020-05-20 13:00:00') AS DATEDIFF;
+# 결과 : 7
+```
+
+- 시간 차이 계산
+- 시간 표현 단위는 second, minute, hour, day, week, month, year 등이 있음
+
+```sql
+SELECT TIMESTAMPDIFF(MINUTE, '2020-05-20 13:00:00','2020-05-20 17:00:00') AS TIMESTAMPDIFF;
+# 결과 : 240
+```
+
 ## 반올림, 올림, 버림
 
 - ROUND(값, 자릿수): 해당 자리수까지 반올림
