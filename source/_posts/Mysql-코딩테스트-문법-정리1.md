@@ -47,6 +47,14 @@ SELECT SUBSTRING_INDEX(SUBSTRING_INDEX('사과,바나나,딸기,포도', ',', 2)
 >> 바나나
 ```
 
+### CONCAT
+
+```SQL
+>> 01012345678
+CONCAT(SUBSTRING(TLNO, 1, 3), '-', SUBSTRING(TLNO, 4, 4), '-', SUBSTRING(TLNO, 8)) AS '전화번호'
+>> 010-1234-5678
+```
+
 ## 시간 관련 함수
 
 ### DATE_FORMAT
